@@ -15,7 +15,7 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     font-size: 25px;
     font-weight: 500;
@@ -55,14 +55,26 @@ aside {
     height: 800px;
 }
 
+.pixarlogo,
+.disneylogo,
+.bjergkobingtitle {
+    height:60px;
+}
+
 aside ul {
     list-style: none;
-    font-size: 20px;
+    font-size: 25px;
 }
+
 
 aside ul a {
     text-decoration: none;
     color: #181818;
+}
+
+aside ul a:hover {
+    -webkit-text-stroke-width: .7px;
+    text-shadow: 0px 2px 6px rgba(78, 78, 78, 0.2);
 }
 
 aside ul li {
@@ -77,7 +89,6 @@ aside h2 {
 
 /* Style main area */
 section {
-    /*flex: 1;*/
     padding: 20px;
 }
 
@@ -94,12 +105,18 @@ p {
     margin: 20px auto;
 }
 
-#mcqueen,
-#bumle,
-#sally {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+/* Pixar */
+@media (min-width: 1100px) {
+    #mcqueen,
+    #bumle,
+    #sally,
+    #lionking,
+    #pinocchio,
+    #beautyandthebeast {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
 }
 
 
@@ -108,11 +125,33 @@ p {
 .sally {
     transition: transform .2s;
     width: 200px;
+    height: 110px;
     margin: 40px;
 }
 
 .scale-hover:hover {
     transform: scale(1.1);
+}
+
+/* Disney */
+.lionking,
+.pinocchio,
+.beautyandthebeast {
+    width: 250px;
+    height: 140px;
+    margin: 40px;
+}
+
+.disneystudios,
+.pixarstudios {
+    width: 480px;
+}
+
+@media (min-width: 1050px) {
+    .disneystudios,
+    .pixarstudios {
+        width: 720px;
+    }
 }
 
 /* Style footer */

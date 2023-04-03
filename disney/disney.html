@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script>
-		var kachow = new Audio();
-		kachow.src = "./sound/kachow.mp3"
-
-		var traktor = new Audio();
-		traktor.src = "./sound/traktor.mp3"
-
-		var sally = new Audio();
-		sally.src = "./sound/sally.mp3"
-	</script>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,32 +24,39 @@
 
 	<main>
 		<aside>
+			<img class="disneylogo" src="/img/disney/disneylogo.png" alt="Disney Studios logo">
 			<h2>Oversigt</h2>
 			<ul>
-				<li><a href="#">Anbefalede Disney film</a></li>
-				<li><a href="#">Disney Studios</a></li>
+				<li><a href="/disney/disney.html">Anbefalede Disney film</a></li>
+				<li><a href="/disney/disneystudios.html">Disney Studios</a></li>
 			</ul>
 		</aside>
 		
 		<section>
 			<h1>Anbefalede Disney film</h1>
 			
-			<h2>Lynet McQueen</h2>
-			<div id="mcqueen">	
-				<p>Lynet McQueen, en racerbil med store drømme om at vinde det store løb, Piston Cup. Han er en ung og ambitiøs racerbil, der opdager, at det ikke kun handler om at vinde, men også om at have venner og lære vigtige livslektioner. Undervejs i filmen møder han en række farverige figurer og oplever mange spændende eventyr på vej mod sin drøm om sejr. Lynet McQueen er en populær og ikonisk figur i børnefilmhistorien, og hans charme og styrke har gjort ham til en af de mest elskede karakterer i Pixar-universet.</p>
-				<img class="mcqueen scale-hover" src="/img/pixar/mcqueen.png" alt="Lynet McQueen fra filmen Biler" onmousedown="kachow.play()">
+			<h2>Løvernes Konge</h2>
+			<div id="lionking">	
+				<p>
+					"Løvernes konge" er en animeret film produceret af Walt Disney Pictures. Handlingen følger en ung løve ved navn Simba, der er arving til tronen som konge over dyrenes rige. Simbas onkel Scar, som ønsker at overtage tronen selv, arrangerer en tragedie, som får Simba til at tro, at det er hans skyld, og han flygter fra riget. Efter at have mødt nye venner og lært vigtige livslektioner vender Simba tilbage til sit rige for at konfrontere Scar og genindtage sin retmæssige plads som konge. Filmen er kendt for sine smukke billeder, velkendte sange og stærke budskaber om mod, ansvar og lederskab. (<a href="https://da.wikipedia.org/wiki/L%C3%B8vernes_Konge">Læs mere her</a>)
+				</p>
+				<img class="lionking" src="/img/disney/lionking.jpg" alt="Forsiden fra filmen Løvernes Konge">
 			</div>
 
-			<h2>Bumle</h2>
-			<div id="bumle">
-				<p>Bumle er også en karakter i Biler-filmen fra Pixar. Han er en slidt gammel trækvogn, der er bedste venner med hovedpersonen, Lynet McQueen. Bumle er en af de mest loyale og sjove karakterer i filmen, og han hjælper Lynet med at lære vigtige lektioner om venskab og teamwork. Han er også en af de mere erfarne biler i filmen, og han bruger sin erfaring og visdom til at hjælpe Lynet med at overvinde forhindringer og nå sit mål om at vinde Piston Cup-løbet. Bumle er en af de mest populære karakterer i Biler-filmen og har været med i alle tre film i serien.</p>
-				<img class="bumle scale-hover" src="/img/pixar/mater.png" alt="Bumle fra filmen Biler" onmousedown="traktor.play()">
+			<h2>Pinocchio</h2>
+			<div id="pinocchio">
+				<p>
+					"Pinocchio" er en animeret film fra Disney om en trædukke, der bliver bragt til liv af en fe. Dukken, som hedder Pinocchio, drømmer om at blive en rigtig dreng og tager derfor på eventyr for at lære vigtige livslektioner. Han bliver ledsaget af sin ven, en græshoppe ved navn Jiminy Cricket. Undervejs bliver Pinocchio fristet af eventyr og falder i snubletråde sat af den onde ræv og katten. Han ender med at blive fanget af en ond dukkemager, der vil bruge ham til at lave trælegetøj. Men i sidste ende viser Pinocchio sig at have modet til at redde sig selv og tage de rigtige beslutninger for at blive en rigtig dreng. Filmen er kendt for sin charmerende animation, velkendte sange og stærke budskaber om ærlighed, mod og at følge sit hjerte. (<a href="https://da.wikipedia.org/wiki/Pinocchio">Læs mere her</a>)
+				</p>
+				<img class="pinocchio" src="/img/disney/pinocchio.jpg" alt="Forsiden fra filmen Pinocchio">
 			</div>
 
-			<h2>Sally Carrera</h2>
-			<div id="sally">
-				<p>Sally Carrera er en anden karakter i Biler-filmen fra Pixar. Hun er en smuk og sofistikeret Porsche sportsvogn med lyseblå maling og grønne øjne. Sally ejer Radiator Springs' lokale motel og advokatkontor. Hun er en klog og stærk karakter, der hjælper Lynet McQueen med at lære om vigtigheden af at sætte pris på livets enkle glæder og værdien af samfundet og fællesskabet. Sally Carrera er en af ​​de vigtigste karakterer i Biler-filmen og er en elsket figur blandt både børn og voksne.</p>
-				<img class="sally scale-hover" src="/img/pixar/sally.png" alt="Sally Carrera fra filmen Biler" onmousedown="sally.play()">
+			<h2>Skønheden og udyret</h2>
+			<div id="beautyandthebeast">
+				<p>
+					"Skønheden og Udyret" er en animeret Disney-film, der følger den smukke og intelligente Belle, der bliver taget til fange af et frygtindgydende uhyre, som er forbandet til at leve som et dyr. Belle opdager, at Udyret i virkeligheden er en fortryllet prins, der har brug for at finde sand kærlighed for at bryde forbandelsen. I løbet af deres tid sammen opdager Belle og Udyret, at de har mere til fælles, end de først troede, og de falder langsomt for hinanden. Men deres kærlighed bliver sat på prøve, da den arrogante jæger Gaston prøver at dræbe Udyret og tage Belle som sin brud. Filmen er kendt for sin smukke animation, ikoniske sange og stærke budskaber om at se ud over det ydre, finde skønhed i forskelligheder og finde kærlighed, hvor man mindst forventer det. (<a href="https://da.wikipedia.org/wiki/Sk%C3%B8nheden_og_udyret_(film_fra_1991)">Læs mere her</a>)
+				</p>
+				<img class="beautyandthebeast" src="/img/disney/beautyandthebeast.jpg" alt="Forsiden fra filmen Skønheden og udyret">
 			</div>
 		</section>
 	</main>
